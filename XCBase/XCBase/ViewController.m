@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PINCache.h"
+#import "XCAppSettingInfoHelper.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
+    id emv = [XCAppSettingInfoHelper environment];
+    id webadd = [XCAppSettingInfoHelper webDevelopAddress];
+    id clean = [XCAppSettingInfoHelper cacheCleanTime];
+    BOOL wifi = [XCAppSettingInfoHelper allowDisWifi];
+    
+    
+    NSLog(@"%@", clean);
 }
 
 @end

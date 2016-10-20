@@ -19,8 +19,10 @@
  *  返回渠道字符串
  */
 + (NSString *)channelId;
-
-
++ (NSNumber *)environment;
++ (NSString *)webDevelopAddress;
++ (NSNumber *)cacheCleanTime;
++ (BOOL      )allowDisWifi;
 
 /**
  

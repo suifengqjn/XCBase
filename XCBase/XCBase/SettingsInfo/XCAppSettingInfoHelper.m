@@ -20,10 +20,6 @@
     [[NSUserDefaults standardUserDefaults] setObject:build
                                               forKey:@"build_preference"];
     
-    NSString *hghash = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"HGHash"];
-    [[NSUserDefaults standardUserDefaults] setObject:hghash
-                                              forKey:@"hg_preference"];
-    
     NSString *channelId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"ChannelId"];
     [[NSUserDefaults standardUserDefaults] setObject:channelId
                                               forKey:@"channelId_preference"];
@@ -40,4 +36,20 @@
     return channelId;
 }
 
++ (NSNumber *)environment
+{
+   return  (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"api_env"];
+}
++ (NSString *)webDevelopAddress
+{
+    return  (NSString *)[[NSUserDefaults standardUserDefaults] objectForKey:@"h5_dev_address"];
+}
++ (NSNumber *)cacheCleanTime
+{
+    return  (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"cache_clean"];
+}
++ (BOOL      )allowDisWifi
+{
+    return  [[[NSUserDefaults standardUserDefaults] objectForKey:@"wifi_allow"] boolValue];
+}
 @end
