@@ -153,7 +153,6 @@
 				1DE929AB1DB86BBD00257C87 /* Resources */,
 				56963A27FD7B95D9B7A02A30 /* Embed Pods Frameworks */,
 				E332FA6F9373B9E62C30DC6B /* Copy Pods Resources */,
-				1DE929D21DB86FF700257C87 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,19 +212,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DE929D21DB86FF700257C87 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "INFOPLISTPATH=\"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Info.plist\"\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nREV=$(date +%Y%m%d.%H%M%S)\n";
-		};
 		2B37286A4DA6F59E23A7B2FC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

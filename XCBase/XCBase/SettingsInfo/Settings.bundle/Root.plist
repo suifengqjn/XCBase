@@ -4,6 +4,60 @@
 <dict>
 	<key>PreferenceSpecifiers</key>
 	<array>
+        <dict>
+            <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>API Environment</string>
+            <key>Key</key>
+            <string>api_env</string>
+            <key>DefaultValue</key>
+            <integer>0</integer>
+            <key>Titles</key>
+            <array>
+                <string>test_mode</string>
+                <string>gray_mode</string>
+                <string>online_mode</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <integer>0</integer>
+                <integer>1</integer>
+                <integer>2</integer>
+            </array>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>自动清理缓存时间</string>
+            <key>Key</key>
+            <string>api_env</string>
+            <key>DefaultValue</key>
+            <integer>0</integer>
+            <key>Titles</key>
+            <array>
+                <string>一周</string>
+                <string>一月</string>
+                <string>三月</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <integer>0</integer>
+                <integer>1</integer>
+                <integer>2</integer>
+            </array>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+            <key>Title</key>
+            <string>允许在非wifi下缓存</string>
+            <key>Key</key>
+            <string>ad_api_test_mode</string>
+            <key>DefaultValue</key>
+            <false/>
+        </dict>
 		<dict>
 			<key>Type</key>
 			<string>PSTitleValueSpecifier</string>
@@ -21,26 +75,6 @@
 			<string>Build</string>
 			<key>Key</key>
 			<string>build_preference</string>
-			<key>DefaultValue</key>
-			<string>-</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
-			<key>Title</key>
-			<string>hg</string>
-			<key>Key</key>
-			<string>hg_preference</string>
-			<key>DefaultValue</key>
-			<string>-</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
-			<key>Title</key>
-			<string>channel</string>
-			<key>Key</key>
-			<string>channelId_preference</string>
 			<key>DefaultValue</key>
 			<string>-</string>
 		</dict>
