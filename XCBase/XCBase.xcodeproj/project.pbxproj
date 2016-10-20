@@ -14,6 +14,8 @@
 		1DE929BD1DB86BBD00257C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929BC1DB86BBD00257C87 /* Assets.xcassets */; };
 		1DE929C01DB86BBD00257C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929BE1DB86BBD00257C87 /* LaunchScreen.storyboard */; };
 		1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CA1DB86CF900257C87 /* XCViewController.m */; };
+		1DE929D01DB86E7300257C87 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929CD1DB86E7300257C87 /* Settings.bundle */; };
+		1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */; };
 		7A31EABDC53176C6A9F8BE30 /* libPods-XCBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B284FA86E4D5CE4E60759D /* libPods-XCBase.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,9 @@
 		1DE929C11DB86BBD00257C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		1DE929C91DB86CF900257C87 /* XCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCViewController.h; sourceTree = "<group>"; };
 		1DE929CA1DB86CF900257C87 /* XCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCViewController.m; sourceTree = "<group>"; };
+		1DE929CD1DB86E7300257C87 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1DE929CE1DB86E7300257C87 /* XCAppSettingInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAppSettingInfoHelper.h; sourceTree = "<group>"; };
+		1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAppSettingInfoHelper.m; sourceTree = "<group>"; };
 		489771415FFD7956D4FCD7E3 /* Pods-XCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCBase.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-XCBase/Pods-XCBase.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B284FA86E4D5CE4E60759D /* libPods-XCBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D978A9D559668E385C65E016 /* Pods-XCBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCBase.release.xcconfig"; path = "../Pods/Target Support Files/Pods-XCBase/Pods-XCBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		1DE929AF1DB86BBD00257C87 /* XCBase */ = {
 			isa = PBXGroup;
 			children = (
+				1DE929CC1DB86E7300257C87 /* SettingsInfo */,
 				1DE929C81DB86CF900257C87 /* XCBaseController */,
 				1DE929C71DB86BE300257C87 /* SupportingFile */,
 				1DE929B31DB86BBD00257C87 /* AppDelegate.h */,
@@ -107,6 +113,16 @@
 			path = XCBaseController;
 			sourceTree = "<group>";
 		};
+		1DE929CC1DB86E7300257C87 /* SettingsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1DE929CD1DB86E7300257C87 /* Settings.bundle */,
+				1DE929CE1DB86E7300257C87 /* XCAppSettingInfoHelper.h */,
+				1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */,
+			);
+			path = SettingsInfo;
+			sourceTree = "<group>";
+		};
 		7948471F6CEC18F1090426CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 				1DE929AB1DB86BBD00257C87 /* Resources */,
 				56963A27FD7B95D9B7A02A30 /* Embed Pods Frameworks */,
 				E332FA6F9373B9E62C30DC6B /* Copy Pods Resources */,
+				1DE929D21DB86FF700257C87 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE929D01DB86E7300257C87 /* Settings.bundle in Resources */,
 				1DE929C01DB86BBD00257C87 /* LaunchScreen.storyboard in Resources */,
 				1DE929BD1DB86BBD00257C87 /* Assets.xcassets in Resources */,
 				1DE929BB1DB86BBD00257C87 /* Main.storyboard in Resources */,
@@ -195,6 +213,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1DE929D21DB86FF700257C87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFOPLISTPATH=\"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/Info.plist\"\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nREV=$(date +%Y%m%d.%H%M%S)\n";
+		};
 		2B37286A4DA6F59E23A7B2FC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +280,7 @@
 			files = (
 				1DE929B81DB86BBD00257C87 /* ViewController.m in Sources */,
 				1DE929B51DB86BBD00257C87 /* AppDelegate.m in Sources */,
+				1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */,
 				1DE929B21DB86BBD00257C87 /* main.m in Sources */,
 				1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */,
 			);
