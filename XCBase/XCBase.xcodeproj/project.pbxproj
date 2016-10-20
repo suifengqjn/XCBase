@@ -16,6 +16,7 @@
 		1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CA1DB86CF900257C87 /* XCViewController.m */; };
 		1DE929D01DB86E7300257C87 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929CD1DB86E7300257C87 /* Settings.bundle */; };
 		1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */; };
+		1DE92A441DB8BF1F00257C87 /* Amy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE92A431DB8BF1F00257C87 /* Amy.framework */; };
 		7A31EABDC53176C6A9F8BE30 /* libPods-XCBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B284FA86E4D5CE4E60759D /* libPods-XCBase.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		1DE929CD1DB86E7300257C87 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1DE929CE1DB86E7300257C87 /* XCAppSettingInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAppSettingInfoHelper.h; sourceTree = "<group>"; };
 		1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAppSettingInfoHelper.m; sourceTree = "<group>"; };
+		1DE92A431DB8BF1F00257C87 /* Amy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Amy.framework; path = "../Amy/build/Debug-iphoneos/Amy.framework"; sourceTree = "<group>"; };
 		489771415FFD7956D4FCD7E3 /* Pods-XCBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCBase.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-XCBase/Pods-XCBase.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B284FA86E4D5CE4E60759D /* libPods-XCBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D978A9D559668E385C65E016 /* Pods-XCBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCBase.release.xcconfig"; path = "../Pods/Target Support Files/Pods-XCBase/Pods-XCBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE92A441DB8BF1F00257C87 /* Amy.framework in Frameworks */,
 				7A31EABDC53176C6A9F8BE30 /* libPods-XCBase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +138,7 @@
 		C7FDF1D796E6E9E495044999 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DE92A431DB8BF1F00257C87 /* Amy.framework */,
 				B5B284FA86E4D5CE4E60759D /* libPods-XCBase.a */,
 			);
 			name = Frameworks;
