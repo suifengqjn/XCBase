@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBB76931DB8CA1600CED69A /* AmyPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DBB76921DB8CA1600CED69A /* AmyPrefix.pch */; };
 		1DE929E51DB8BE9700257C87 /* Amy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE929E31DB8BE9700257C87 /* Amy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DE92A4A1DB8C07A00257C87 /* XCEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE92A481DB8C07A00257C87 /* XCEnvironment.h */; };
 		1DE92A4B1DB8C07A00257C87 /* XCEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE92A491DB8C07A00257C87 /* XCEnvironment.m */; };
-		1DE92A4D1DB8C76F00257C87 /* AmyPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DE92A4C1DB8C76F00257C87 /* AmyPrefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBB76921DB8CA1600CED69A /* AmyPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmyPrefix.pch; sourceTree = "<group>"; };
 		1DE929E01DB8BE9700257C87 /* Amy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE929E31DB8BE9700257C87 /* Amy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amy.h; sourceTree = "<group>"; };
 		1DE929E41DB8BE9700257C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE92A481DB8C07A00257C87 /* XCEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEnvironment.h; sourceTree = "<group>"; };
 		1DE92A491DB8C07A00257C87 /* XCEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCEnvironment.m; sourceTree = "<group>"; };
-		1DE92A4C1DB8C76F00257C87 /* AmyPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmyPrefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			children = (
 				1DE92A451DB8BF4800257C87 /* Environment */,
 				1DE929E31DB8BE9700257C87 /* Amy.h */,
-				1DE92A4C1DB8C76F00257C87 /* AmyPrefix.pch */,
+				1DBB76921DB8CA1600CED69A /* AmyPrefix.pch */,
 				1DE929E41DB8BE9700257C87 /* Info.plist */,
 			);
 			path = Amy;
@@ -78,7 +78,7 @@
 			files = (
 				1DE929E51DB8BE9700257C87 /* Amy.h in Headers */,
 				1DE92A4A1DB8C07A00257C87 /* XCEnvironment.h in Headers */,
-				1DE92A4D1DB8C76F00257C87 /* AmyPrefix.pch in Headers */,
+				1DBB76931DB8CA1600CED69A /* AmyPrefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
