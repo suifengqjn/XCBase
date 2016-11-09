@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5D3F891DD2BF13006E83FF /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */; };
 		1DE929B21DB86BBD00257C87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929B11DB86BBD00257C87 /* main.m */; };
 		1DE929B51DB86BBD00257C87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929B41DB86BBD00257C87 /* AppDelegate.m */; };
-		1DE929B81DB86BBD00257C87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929B71DB86BBD00257C87 /* ViewController.m */; };
-		1DE929BB1DB86BBD00257C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929B91DB86BBD00257C87 /* Main.storyboard */; };
 		1DE929BD1DB86BBD00257C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929BC1DB86BBD00257C87 /* Assets.xcassets */; };
-		1DE929C01DB86BBD00257C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929BE1DB86BBD00257C87 /* LaunchScreen.storyboard */; };
 		1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CA1DB86CF900257C87 /* XCViewController.m */; };
 		1DE929D01DB86E7300257C87 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DE929CD1DB86E7300257C87 /* Settings.bundle */; };
 		1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929CF1DB86E7300257C87 /* XCAppSettingInfoHelper.m */; };
@@ -21,15 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5D3F871DD2BF13006E83FF /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		1DE929AD1DB86BBD00257C87 /* XCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE929B11DB86BBD00257C87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1DE929B31DB86BBD00257C87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DE929B41DB86BBD00257C87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1DE929B61DB86BBD00257C87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DE929B71DB86BBD00257C87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1DE929BA1DB86BBD00257C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DE929BC1DB86BBD00257C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		1DE929BF1DB86BBD00257C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE929C11DB86BBD00257C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		1DE929C91DB86CF900257C87 /* XCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCViewController.h; sourceTree = "<group>"; };
 		1DE929CA1DB86CF900257C87 /* XCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCViewController.m; sourceTree = "<group>"; };
@@ -55,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5D3F861DD2BEC8006E83FF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D3F871DD2BF13006E83FF /* RootTabBarController.h */,
+				1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		1DE929A41DB86BBD00257C87 = {
 			isa = PBXGroup;
 			children = (
@@ -76,13 +81,12 @@
 		1DE929AF1DB86BBD00257C87 /* XCBase */ = {
 			isa = PBXGroup;
 			children = (
+				1D5D3F861DD2BEC8006E83FF /* Class */,
 				1DE929CC1DB86E7300257C87 /* SettingsInfo */,
 				1DE929C81DB86CF900257C87 /* XCBaseController */,
 				1DE929C71DB86BE300257C87 /* SupportingFile */,
 				1DE929B31DB86BBD00257C87 /* AppDelegate.h */,
 				1DE929B41DB86BBD00257C87 /* AppDelegate.m */,
-				1DE929B61DB86BBD00257C87 /* ViewController.h */,
-				1DE929B71DB86BBD00257C87 /* ViewController.m */,
 				1DE929B01DB86BBD00257C87 /* Supporting Files */,
 			);
 			path = XCBase;
@@ -99,9 +103,7 @@
 		1DE929C71DB86BE300257C87 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
-				1DE929B91DB86BBD00257C87 /* Main.storyboard */,
 				1DE929BC1DB86BBD00257C87 /* Assets.xcassets */,
-				1DE929BE1DB86BBD00257C87 /* LaunchScreen.storyboard */,
 				1DE929C11DB86BBD00257C87 /* Info.plist */,
 			);
 			path = SupportingFile;
@@ -178,7 +180,7 @@
 				TargetAttributes = {
 					1DE929AC1DB86BBD00257C87 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = S9YH8KG45Q;
+						DevelopmentTeam = VN226642G5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -207,9 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE929D01DB86E7300257C87 /* Settings.bundle in Resources */,
-				1DE929C01DB86BBD00257C87 /* LaunchScreen.storyboard in Resources */,
 				1DE929BD1DB86BBD00257C87 /* Assets.xcassets in Resources */,
-				1DE929BB1DB86BBD00257C87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,36 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE929B81DB86BBD00257C87 /* ViewController.m in Sources */,
 				1DE929B51DB86BBD00257C87 /* AppDelegate.m in Sources */,
 				1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */,
+				1D5D3F891DD2BF13006E83FF /* RootTabBarController.m in Sources */,
 				1DE929B21DB86BBD00257C87 /* main.m in Sources */,
 				1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1DE929B91DB86BBD00257C87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DE929BA1DB86BBD00257C87 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		1DE929BE1DB86BBD00257C87 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DE929BF1DB86BBD00257C87 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1DE929C21DB86BBD00257C87 /* Debug */ = {
@@ -395,8 +374,11 @@
 			baseConfigurationReference = 489771415FFD7956D4FCD7E3 /* Pods-XCBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = S9YH8KG45Q;
 				INFOPLIST_FILE = XCBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.XCBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,8 +390,11 @@
 			baseConfigurationReference = D978A9D559668E385C65E016 /* Pods-XCBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = S9YH8KG45Q;
 				INFOPLIST_FILE = XCBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.XCBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";

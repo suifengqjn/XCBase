@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XCAppSettingInfoHelper.h"
+#import "RootTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [XCAppSettingInfoHelper setSettingInfo];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[RootTabBarController alloc] init];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
