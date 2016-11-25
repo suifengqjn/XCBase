@@ -7,5 +7,6 @@ xcodeproj ‘./XCBase/XCBase'
 target :XCBase do
 
 pod 'PINCache'
+pod ‘FMRefreshControl’
 
 end

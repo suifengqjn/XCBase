@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D589F221DD2C29E00AD7A45 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D589F211DD2C29E00AD7A45 /* RootViewController.m */; };
+		1D589F251DD2C2C400AD7A45 /* XCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D589F241DD2C2C400AD7A45 /* XCNavigationController.m */; };
 		1D5D3F891DD2BF13006E83FF /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */; };
 		1DE929B21DB86BBD00257C87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929B11DB86BBD00257C87 /* main.m */; };
 		1DE929B51DB86BBD00257C87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE929B41DB86BBD00257C87 /* AppDelegate.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D589F201DD2C29E00AD7A45 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1D589F211DD2C29E00AD7A45 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1D589F231DD2C2C400AD7A45 /* XCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNavigationController.h; sourceTree = "<group>"; };
+		1D589F241DD2C2C400AD7A45 /* XCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNavigationController.m; sourceTree = "<group>"; };
 		1D5D3F871DD2BF13006E83FF /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
 		1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		1DE929AD1DB86BBD00257C87 /* XCBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +62,8 @@
 			children = (
 				1D5D3F871DD2BF13006E83FF /* RootTabBarController.h */,
 				1D5D3F881DD2BF13006E83FF /* RootTabBarController.m */,
+				1D589F201DD2C29E00AD7A45 /* RootViewController.h */,
+				1D589F211DD2C29E00AD7A45 /* RootViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -114,6 +122,8 @@
 			children = (
 				1DE929C91DB86CF900257C87 /* XCViewController.h */,
 				1DE929CA1DB86CF900257C87 /* XCViewController.m */,
+				1D589F231DD2C2C400AD7A45 /* XCNavigationController.h */,
+				1D589F241DD2C2C400AD7A45 /* XCNavigationController.m */,
 			);
 			path = XCBaseController;
 			sourceTree = "<group>";
@@ -153,12 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DE929C41DB86BBD00257C87 /* Build configuration list for PBXNativeTarget "XCBase" */;
 			buildPhases = (
-				2B37286A4DA6F59E23A7B2FC /* Check Pods Manifest.lock */,
+				2B37286A4DA6F59E23A7B2FC /* [CP] Check Pods Manifest.lock */,
 				1DE929A91DB86BBD00257C87 /* Sources */,
 				1DE929AA1DB86BBD00257C87 /* Frameworks */,
 				1DE929AB1DB86BBD00257C87 /* Resources */,
-				56963A27FD7B95D9B7A02A30 /* Embed Pods Frameworks */,
-				E332FA6F9373B9E62C30DC6B /* Copy Pods Resources */,
+				56963A27FD7B95D9B7A02A30 /* [CP] Embed Pods Frameworks */,
+				E332FA6F9373B9E62C30DC6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,7 +190,7 @@
 				TargetAttributes = {
 					1DE929AC1DB86BBD00257C87 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = VN226642G5;
+						DevelopmentTeam = S9YH8KG45Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -216,29 +226,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B37286A4DA6F59E23A7B2FC /* Check Pods Manifest.lock */ = {
+		2B37286A4DA6F59E23A7B2FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		56963A27FD7B95D9B7A02A30 /* Embed Pods Frameworks */ = {
+		56963A27FD7B95D9B7A02A30 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,14 +256,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-XCBase/Pods-XCBase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E332FA6F9373B9E62C30DC6B /* Copy Pods Resources */ = {
+		E332FA6F9373B9E62C30DC6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE929B51DB86BBD00257C87 /* AppDelegate.m in Sources */,
+				1D589F251DD2C2C400AD7A45 /* XCNavigationController.m in Sources */,
 				1DE929D11DB86E7300257C87 /* XCAppSettingInfoHelper.m in Sources */,
+				1D589F221DD2C29E00AD7A45 /* RootViewController.m in Sources */,
 				1D5D3F891DD2BF13006E83FF /* RootTabBarController.m in Sources */,
 				1DE929B21DB86BBD00257C87 /* main.m in Sources */,
 				1DE929CB1DB86CF900257C87 /* XCViewController.m in Sources */,

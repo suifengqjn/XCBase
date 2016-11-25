@@ -1,10 +1,15 @@
 PODS:
+  - FMRefreshControl (1.1.0)
   - PINCache (2.3)
 
 DEPENDENCIES:
+  - FMRefreshControl
   - PINCache
 
 SPEC CHECKSUMS:
+  FMRefreshControl: da08de9b8efad10fb76b533f834e8486e59268af
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 831d4fe5780e989831dc81fee33fb4626bf4d28b
+
+COCOAPODS: 1.1.1

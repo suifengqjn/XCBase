@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "XCAppSettingInfoHelper.h"
 #import "RootTabBarController.h"
+#import "RootViewController.h"
+#import "XCNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +23,7 @@
     [XCAppSettingInfoHelper setSettingInfo];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[RootTabBarController alloc] init];
+    self.window.rootViewController = [[XCNavigationController alloc] initWithRootViewController:[RootViewController new]];
     [self.window makeKeyAndVisible];
     
     return YES;

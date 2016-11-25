@@ -12,4 +12,6 @@
 @property(strong,nonatomic) NSDictionary *pageConfig;
 @property(strong,nonatomic) NSString *pageName;
 @property(assign, atomic  )   BOOL hideBarOnSwipe;
+
+@property (nonatomic, strong) UINavigationItem *navItem;
 @end
