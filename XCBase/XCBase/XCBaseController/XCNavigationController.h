@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface XCNavigationController : UINavigationController
-@property (nonatomic, strong) UINavigationItem *navItem;
 @end

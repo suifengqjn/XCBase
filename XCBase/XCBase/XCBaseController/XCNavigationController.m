@@ -16,15 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.naviBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-    [self.navigationBar addSubview:self.naviBar];
 }
 
-- (void)setNavItem:(UINavigationItem *)navItem
-{
-    _navItem = navItem;
-    self.naviBar.items = @[navItem];
-    
-}
 
 @end
